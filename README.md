@@ -16,9 +16,10 @@
 
 
 **Features:**
-- Builtin error handlers for heap memory allocators
-- Avoiding ```dangling pointers``` by asigning ```NULL``` value after ```free()```
-- Avoiding ```double free``` memory corruption error (run-time) by ```NULL``` check before ```free()```
+- Builtin error handlers for heap memory allocators such as ```malloc()``` and ```calloc()```
+- Avoiding ```dangling pointers``` by asigning NULL value after ```free()```
+- Avoiding ```double free``` memory corruption (run-time error) by doing NULL check before ```free()```
+- Own implementation of ```strdup()``` function in the name of ```sdstrdup()```
 
 
 **TODO:**
