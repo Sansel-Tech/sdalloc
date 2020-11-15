@@ -44,7 +44,6 @@ int sdasprintf(char **strp, const char *fmt, ...)
 	if (ret < 0) {
 		fprintf(stderr, "asprintf: failed due to %s\n", strerror(errno));
 		abort();
-		return -1; /* not_reachable */
 	}
 
 	return ret;
@@ -60,7 +59,6 @@ void *sdmalloc(size_t size)
 	if (ptr == NULL) {
 		fprintf(stderr, "sdmalloc: failed due to %s\n", strerror(errno));
 		abort();
-		return NULL; /* not_reachable */
 	}
 
 	memset(ptr, 0x00, size);
@@ -77,7 +75,6 @@ void *sdcalloc(size_t nmemb, size_t size)
 	if (ptr == NULL) {
 		fprintf(stderr, "sdcalloc: failed due to %s\n", strerror(errno));
 		abort();
-		return NULL; /* not_reachable */
 	}
 
 	return ptr;

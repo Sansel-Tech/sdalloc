@@ -24,5 +24,5 @@
 - Own implementation of ```strdup()``` function in the name of ```sdstrdup()```
 
 **TODO:**
-- Need to implement wrapper for ```asprintf()```
+- Need to implement wrapper for ```asprintf()``` and ```vasprintf()```
 
