@@ -101,8 +101,8 @@ void *sdrealloc(void *ptr, size_t size)
 #if 0
 /*
   Commented since we are using sdfree() as macro. Initializing NULL in line no 116 is no effective to the caller.
-  Because, ptr is a local variable (argument). NULLing the ptr is useless to the caller an might cause double free.
-  We can achive this by modifying the function as sdfree(void **ptr), but the style dffers from standard free() api.
+  Because, ptr is a local variable (argument). NULLing the ptr is useless to the caller and might cause double free.
+  We can achive this by modifying the function as sdfree(void **ptr), but the style differs from standard free() api.
 */
 void sdfree(void *ptr)
 {
